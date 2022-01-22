@@ -2,11 +2,11 @@
 .navbar {
   width: 100%;
   height: 80px;
-  background-color: black !important;
+  background-color: #54b7e4 !important;
 
   // Div Container
   .navbarContainer {
-    background-color: black;
+    background-color: #54b7e4;
     color: white;
 
     // Logo
@@ -15,9 +15,15 @@
       align-items: center;
       height: 100%;
       color: white;
+      margin: 0px;
+      font-size: 1.5rem;
+      transition: all 0.5s;
       img {
         margin-right: 5px;
       }
+    }
+    .navbarLogo:hover {
+      color: #dde0e0;
     }
   }
 }
@@ -33,13 +39,13 @@
   .offcanvasBody {
     ul {
       li {
-
+        border-radius: 5px;
         a {
-          color: white;
+          color: white !important;
         }
-        a:hover {
-          color: rgb(20, 219, 20);
-        }
+      }
+      li:hover {
+        background-color: #6383c7;
       }
     }
   }
@@ -85,17 +91,33 @@
 
 // `lg` applies to medium devices (tablets, less than 992px)
 @media (max-width: 991.98px) {
+  // Componente Navbar
   .navbar {
+    // Div Container
     .navbarContainer {
-      margin: 0;
-      max-width: 100%;
+      button {
+        color: white;
+        //background-color:red;
+        border-color: transparent;
+        transition: all 0.5s;
+        span {
+          color: white;
+        }
+      }
+      button:hover {
+        // border-color: white;
+        background-color: #6383c7;
+      }
+      button:focus {
+        box-shadow: 0 0 0 0;
+      }
     }
   }
 
   // offcanvas del Componente Navbar
   .offcanvas {
     .offcanvasHeader {
-      background-color: black;
+      background-color: #54b7e4;
       height: 80px;
       min-height: 80px;
 
@@ -113,8 +135,12 @@
         padding-right: 0 !important;
         li {
           a {
+            margin-left: 15px;
             color: black !important;
           }
+        }
+        li:hover {
+          background-color: #dde0e0;
         }
       }
     }

@@ -1,24 +1,21 @@
 import * as React from "react";
 import styles from "./Navigation.module.scss";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 interface NavbarProps {}
 
 const Navbar: React.FunctionComponent<NavbarProps> = () => {
   return (
     <nav
-      className={styles.navbar + " navbar navbar-expand-lg"}
+      className={
+        styles.navbar + " navbar navbar-expand-lg navbar-light bg-light"
+      }
     >
       <div className={styles.navbarContainer + " container"}>
-        <a className={styles.navbarLogo + " navbar-brand"} href="/">
-          <img
-            src="https://getbootstrap.com/docs/5.1/assets/brand/bootstrap-logo.svg"
-            alt="bootstrap"
-            width="30"
-            height="27"
-            className="d-inline-block align-text-top"
-          />
-          Bootstrap
-        </a>
+        <div className={styles.navbarLogo + " navbar-brand ml-3"}>
+          Universidad Test
+        </div>
         <button
           className="navbar-toggler"
           type="button"
@@ -26,7 +23,7 @@ const Navbar: React.FunctionComponent<NavbarProps> = () => {
           data-bs-target="#offcanvasNavbar"
           aria-controls="offcanvasNavbar"
         >
-          <span className="navbar-toggler-icon"></span>
+          <FontAwesomeIcon icon={faBars} />
         </button>
         <div
           className={styles.offcanvas + " offcanvas offcanvas-end"}
@@ -39,7 +36,7 @@ const Navbar: React.FunctionComponent<NavbarProps> = () => {
               className={styles.offcanvasTittle + " offcanvas-title"}
               id="offcanvasNavbarLabel"
             >
-              Menu Offcanvas
+              Cristobal@Test.cl
             </h5>
             <button
               type="button"
@@ -52,17 +49,17 @@ const Navbar: React.FunctionComponent<NavbarProps> = () => {
             <ul className="navbar-nav justify-content-end flex-grow-1 pe-3">
               <li className="nav-item">
                 <a className="nav-link" aria-current="page" href="/">
-                  Premium
+                  Facultades
                 </a>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="/">
-                  Ayuda
+                  Cursos
                 </a>
               </li>
               <li className="nav-item">
                 <a className="nav-link" aria-current="page" href="/">
-                  Descargar
+                  Perfil
                 </a>
               </li>
               <li className={styles.separator}></li>
