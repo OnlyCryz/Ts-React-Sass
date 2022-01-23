@@ -13,11 +13,11 @@ const Navbar: React.FunctionComponent<NavbarProps> = () => {
       }
     >
       <div className={styles.navbarContainer + " container"}>
-        <div className={styles.navbarLogo + " navbar-brand ml-3"}>
+        <a className={styles.navbarLogo + " navbar-brand ml-3"} href="/">
           Universidad Test
-        </div>
+        </a>
         <button
-          className="navbar-toggler"
+          className={styles.navbarToggler + " navbar-toggler"}
           type="button"
           data-bs-toggle="offcanvas"
           data-bs-target="#offcanvasNavbar"
@@ -48,7 +48,7 @@ const Navbar: React.FunctionComponent<NavbarProps> = () => {
           <div className={styles.offcanvasBody + " offcanvas-body"}>
             <ul className="navbar-nav justify-content-end flex-grow-1 pe-3">
               <li className="nav-item">
-                <a className="nav-link" aria-current="page" href="/">
+                <a className="nav-link" aria-current="page" href="/faculties">
                   Facultades
                 </a>
               </li>

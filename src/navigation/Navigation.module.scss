@@ -2,11 +2,11 @@
 .navbar {
   width: 100%;
   height: 80px;
-  background-color: #54b7e4 !important;
+  background-color: #4CB4BE !important;
 
   // Div Container
   .navbarContainer {
-    background-color: #54b7e4;
+    background-color: #4CB4BE;
     color: white;
 
     // Logo
@@ -39,13 +39,13 @@
   .offcanvasBody {
     ul {
       li {
-        border-radius: 5px;
+        border-radius: 3px;
         a {
           color: white !important;
         }
       }
       li:hover {
-        background-color: #6383c7;
+        background-color: #84CCCC;
       }
     }
   }
@@ -95,20 +95,19 @@
   .navbar {
     // Div Container
     .navbarContainer {
-      button {
+      .navbarToggler {
         color: white;
-        //background-color:red;
+        height: 40px;
         border-color: transparent;
         transition: all 0.5s;
         span {
           color: white;
         }
       }
-      button:hover {
-        // border-color: white;
-        background-color: #6383c7;
+      .navbarToggler:hover {
+        background-color: #84CCCC;
       }
-      button:focus {
+      .navbarToggler:focus {
         box-shadow: 0 0 0 0;
       }
     }
@@ -117,7 +116,7 @@
   // offcanvas del Componente Navbar
   .offcanvas {
     .offcanvasHeader {
-      background-color: #54b7e4;
+      background-color: #4CB4BE;
       height: 80px;
       min-height: 80px;
 
